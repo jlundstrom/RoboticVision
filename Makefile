@@ -1,7 +1,7 @@
 TARGET := pgm
 
 BUILD := build
-SRCS := pgm.c filter.c readPGM.c
+SRCS := pgm.c filter.c sobel.c canny.c readPGM.c
 OBJS := $(patsubst %,$(BUILD)/%.o,$(SRCS))
 DEPS := $(OBJS:.o=.d)
 
